@@ -15,5 +15,31 @@ body{
     height: 100vh;
     color: #fff;
     background: linear-gradient(-45deg, #350259, #3C0265, #42026F, #D1BAFF);
-    background-size: 400%;
+    background-size: 400% 440%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
