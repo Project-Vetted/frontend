@@ -32,7 +32,7 @@ window.onload = () =>{
     }
 };
 
-let swiper = new Swiper(".home-slider", {
+var swiper = new Swiper(".home-slider", {
     loop:true,
     grabCursor:true,
     navigation: {

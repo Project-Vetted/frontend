@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #10221b;
+    background: #350259;
 }
 
 section {
@@ -41,8 +41,8 @@ buttons
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    border: 0.2rem solid #10221b;
-    color: #10221b;
+    border: 0.2rem solid #350259;
+    color: #350259;
     cursor: pointer;
     background: none;
     font-size: 1.7rem;
@@ -50,8 +50,8 @@ buttons
 }
 
 .btn:hover {
-    background: #10221b;
-    color: #fff;
+    background: #320259;
+    color: #D1BAFF;
 }
 /*******************
 header
@@ -60,7 +60,7 @@ header
     text-align: center;
     margin-bottom: 2.5rem;
     font-size: 4rem;
-    color: #10221b;
+    color: #350259;
 }
 .social-header{
     position: absolute;
@@ -85,11 +85,11 @@ header
 .social-header .social-media a {
     margin-left: 2rem;
     font-size: 1.7rem;
-    color: #10221b;
+    color: #350259;
 }
 
 .social-header .social-media a:hover {
-    color: #219150;
+    color: #350259;
 }
 
 .header {
@@ -116,17 +116,17 @@ header
 .header .navbar a {
     margin-left: 2rem;
     font-size: 1.7rem;
-    color: #10221b;
+    color: #350259;
 }
 
 .header .navbar a:hover {
-    color: #219150;
+    color: #918DD2;
 }
 
 .header .navbar #nav-close {
     font-size: 5rem;
     cursor: pointer;
-    color: #10221b;
+    color: #350259;
     display: none;
 }
 
@@ -135,12 +135,12 @@ header
     font-size: 2.5rem;
     margin-left: 2rem;
     cursor: pointer;
-    color: #10221b;
+    color: #350259;
 }
 
 .header .icons a:hover,
 .header .icons div:hover {
-    color: #219150;
+    color: #350259;
 }
 
 .home {
@@ -175,19 +175,19 @@ header
 
 .home .box .content span {
     font-size: 4rem;
-    color: #10221b;
+    color: #350259;
 }
 
 .home .box .content h3 {
     font-size: 6rem;
-    color: #219150;
+    color: #918DD2;
     padding-top: .5rem;
     text-transform: uppercase;
 }
 
 .home .box .content p {
     line-height: 2;
-    color: #10221b;
+    color: #350259;
     font-size: 1.5rem;
     padding: 1rem 0;
 }
@@ -195,7 +195,7 @@ header
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 3rem;
-    color: #10221b;
+    color: #350259;
 }
 
 .category .box-container {
@@ -220,12 +220,12 @@ header
 
 .category .box-container .box h3 {
     font-size: 2rem;
-    color: #219150;
+    color: #350259;
 }
 
 .category .box-container .box p {
     font-size: 1.5rem;
-    color: #10221b;
+    color: #42026F;
     padding: 1rem 0;
     line-height: 2;
 }
@@ -267,12 +267,12 @@ about section
 
 .about .content h3 {
     font-size: 3rem;
-    color: #219150;
+    color: #350259;
 }
 
 .about .content p {
     font-size: 1.5rem;
-    color: #10221b;
+    color: #42026F;
     padding: 1rem 0;
     line-height: 2;
 }
@@ -292,13 +292,13 @@ about section
 .services .box-container .box {
     text-align: center;
     padding: 2rem;
-    border: 0.2rem solid #10221b;
+    border: 0.2rem solid #350259;
     border-radius: .5rem;
     background: #fff;
 }
 
 .services .box-container .box:hover {
-    background: #10221b;
+    background: #350259;
 }
 
 .services .box-container .box:hover img {
@@ -327,12 +327,12 @@ about section
 
 .services .box-container .box h3 {
     font-size: 2rem;
-    color: #219150;
+    color: #350259;
 }
 
 .services .box-container .box p {
     font-size: 1.5rem;
-    color: #10221b;
+    color: #350259;
     padding: 1rem 0;
     line-height: 2;
 }
@@ -346,7 +346,7 @@ sign-in/register
     font-style: italic;
     background: #eee;
     border-radius: .5rem;
-    color: #10221b;
+    color: #350259;
     line-height: 2;
     position: relative;
     z-index: 0;
@@ -364,7 +364,9 @@ sign-in/register
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
+.blogs{
+    background: #eee;
+}
 .blogs .slide {
     text-align: center;
     padding: 2rem;
@@ -379,7 +381,7 @@ sign-in/register
 }
 
 .blogs .slide .icons {
-    background: #10221b;
+    background: #350259;
     border-radius: .5rem;
     padding: 1rem;
     position: relative;
@@ -389,34 +391,34 @@ sign-in/register
 
 .blogs .slide .icons a {
     font-size: 1.4rem;
-    color: #fff;
+    color: #eee;
     margin: 0 1rem;
 }
 
 .blogs .slide .icons a:hover {
-    color: #219150;
+    color: #D1BAFF;
 }
 
 .blogs .slide .icons a i {
     padding-right: .5rem;
-    color: #219150;
+    color: #D1BAFF;
 }
 
 .blogs .slide h3 {
     font-size: 2rem;
-    color: #10221b;
+    color: #350259;
 }
 
 .blogs .slide p {
     font-size: 1.4rem;
     padding: 1rem 0;
     line-height: 2;
-    color: #10221b;
+    color: #3C0265;
 }
 
-.newsletter {
-    background: #eee;
-}
+/*.newsletter {*/
+/*    background: #eee;*/
+/*}*/
 
 .newsletter .content {
     max-width: 70rem;
@@ -427,14 +429,14 @@ sign-in/register
 .newsletter .content p {
     font-size: 1.5rem;
     line-height: 2;
-    color: #10221b;
+    color: #5D357A;
 }
 
 .newsletter .content form {
     margin-top: 2rem;
     background: #fff;
     border-radius: 5rem;
-    border: 0.2rem solid #10221b;
+    border: 0.2rem solid #350259;
     padding: .7rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,20 +448,20 @@ sign-in/register
     background: none;
     text-transform: none;
     font-size: 1.6rem;
-    color: #10221b;
+    color: #350259;
     padding: 0 1.3rem;
 }
 
 .newsletter .content form .btn {
     margin-top: 0;
     border-radius: 5rem;
-    background: #10221b;
-    color: #fff;
+    background: #350259;
+    color: #C0B2FF;
 }
 
 .newsletter .content form .btn:hover {
-    background: none;
-    color: #10221b;
+    background: #C0B2FF;
+    color: #350259;
 }
 
 .footer {
@@ -487,17 +489,17 @@ sign-in/register
 .footer .box-container .box a {
     display: block;
     font-size: 1.4rem;
-    color: #fff;
+    color: #C0B2FF;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a i {
-    color: #219150;
+    color: #918DD2;
     padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover {
-    color: #219150;
+    color: #9F9BE7;
 }
 
 .footer .box-container .box a:hover i {
@@ -514,7 +516,7 @@ sign-in/register
 }
 
 .footer .group-name span {
-    color: #219150;
+    color: #918DD2;
 }
 
 @media (max-width: 1200px) {
@@ -581,6 +583,7 @@ sign-in/register
         -ms-flex-pack: center;
         justify-content: center;
     }
+
     .header .navbar.active {
         left: 0;
         -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
@@ -610,8 +613,6 @@ sign-in/register
         font-size: 3rem;
     }
 }
-
-
 
 
 /*OLD CSS*/
