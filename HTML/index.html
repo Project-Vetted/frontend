@@ -9,21 +9,20 @@
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- custom css file link  -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
 <!--social media header starts-->
-<!--<header class="social-header">-->
-<!--    <section class="social-media">-->
+<!--<section class="social-header">-->
+<!--    <nav class="social-media">-->
 <!--        <div id="socials" class="socials"></div>-->
-<!--        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>-->
-<!--        <a href="#"> <i class="fab fa-github"></i> github </a>-->
-<!--    </section>-->
-<!--</header>-->
+<!--        <a href="https://www.linkedin.com/in/mersedyes-livingston/"> <i class="fab fa-linkedin"></i> linkedin </a>-->
+<!--        <a href="https://github.com/Project-Vetted"> <i class="fab fa-github"></i> github </a>-->
+<!--    </nav>-->
+<!--</section>-->
 <!--social media header ends-->
 
 <!-- header section starts  -->
@@ -38,6 +37,8 @@
         <a href="#contact">contact</a>
         <a href="#resource">resource blog</a>
         <a href="#visiter-user">Sign-in/Register</a>
+        <a href="https://www.linkedin.com/in/mersedyes-livingston/"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="https://github.com/Project-Vetted"> <i class="fab fa-github"></i> github </a>
     </nav>
 </header>
 
@@ -54,41 +55,35 @@
                         <span>you are not</span>
                         <h3>alone</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
-                        <a href="#" class="btn">get started</a>
+                        <a href="#visiter-user" class="btn">get started</a>
                     </div>
                 </div>
             </div>
-
             <div class="swiper-slide">
                 <div class="box second" style="background: url(./assets/imgs/home-bg-2.png) no-repeat;">
                     <div class="content">
                         <span>this is your</span>
                         <h3>safe space</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
-                        <a href="#" class="btn">get started</a>
+                        <a href="#visiter-user" class="btn">get started</a>
                     </div>
                 </div>
             </div>
-
             <div class="swiper-slide">
                 <div class="box" style="background: url(./assets/imgs/home-bg-3.png) no-repeat;">
                     <div class="content">
                         <span>own your mental</span>
                         <h3>health</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</p>
-                        <a href="#" class="btn">get started</a>
+                        <a href="#visiter-user" class="btn">get started</a>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-
     </div>
-
 </section>
-
 <!-- home section ends -->
 
 <!-- about section starts  -->
@@ -284,13 +279,24 @@
     <div class="group-name">created by <span>Globo Gym</span> | all rights reserved</div>
 
 </section>
-
 <!-- footer section ends -->
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    const swiper = new Swiper(".home-slider", {
+        loop: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="./assets/js/main.js"></script>
 
 </body>
 </html>
