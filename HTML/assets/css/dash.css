@@ -11,7 +11,7 @@
     --primary-color: #C0B2FF;
     --panel-color: #9F9BE7;
     --text-color: #350259;
-    --black-light-color: #350259;
+    --black-light-color: #fff;
     --border-color: #D1BAFF;
     --toggle-color: #350259;
     --box1-color: #918DD2;
@@ -32,10 +32,10 @@ body{
 body.dark{
     --primary-color: #42026F;
     --panel-color: #53197C;
-    --text-color: #fff;
+    --text-color: #C0B2FF;
     --black-light-color: #C0B2FF;
     --border-color: #C0B2FF;
-    --toggle-color: #FFF;
+    --toggle-color: #C0B2FF;
     --box1-color: #350259;
     --box2-color: #3C0265;
     --box3-color: #42026F;
@@ -55,7 +55,7 @@ body.dark{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
+    background: #350259;
 }
 
 nav{
