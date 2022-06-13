@@ -10,14 +10,14 @@
     /* ===== Colors ===== */
     --primary-color: #C0B2FF;
     --panel-color: #9F9BE7;
-    --text-color: #fff;
-    --black-light-color: #fff;
+    --text-color: #350259;
+    --black-light-color: #350259;
     --border-color: #D1BAFF;
     --toggle-color: #350259;
     --box1-color: #918DD2;
     --box2-color: #918DD2;
     --box3-color: #918DD2;
-    --title-icon-color: #fff;
+    --title-icon-color: #350259;
 
     /* ====== Transitions ====== */
     --tran-05: all 0.5s ease;
@@ -32,7 +32,7 @@ body{
 body.dark{
     --primary-color: #42026F;
     --panel-color: #53197C;
-    --text-color: #D1BAFF;
+    --text-color: #fff;
     --black-light-color: #C0B2FF;
     --border-color: #C0B2FF;
     --toggle-color: #FFF;
