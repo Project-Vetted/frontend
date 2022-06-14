@@ -468,11 +468,65 @@ nav.close ~ .dashboard .top-nav{
 .chat-btn:hover::before{
     transform: translate(6px, 6px);
 }
+/*resources btn*/
 .resources-btn{
-
+    background-color: #D1BAFF;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.resources-btn::after, resources-btn::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #D1BAFF;
+    border-radius: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.3s ease;
 }
 
+.resources-btn:hover{
+    transform: translate(-12px, -12px);
+}
+
+.resources-btn:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.resources-btn:hover::before{
+    transform: translate(6px, 6px);
+}
+/*protocol btn*/
 .protocol-btn{
-
+    background-color: #D1BAFF;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.protocol-btn::after, protocol-btn::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #D1BAFF;
+    border-radius: inherit;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.3s ease;
 }
 
+.protocol-btn:hover{
+    transform: translate(-12px, -12px);
+}
+
+.protocol-btn:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.protocol-btn:hover::before{
+    transform: translate(6px, 6px);
+}
