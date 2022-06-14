@@ -427,3 +427,36 @@ nav.close ~ .dashboard .top-nav{
     height: 150px;
     width: 150px;
 }
+/*user options button*/
+.user-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: #fff;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.chat-btn{
+    background-color: #D1BAFF;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.chat-btn::after, chat-btn::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #D1BAFF;
+    border-radius: inherit;
+    width: 100%;
+
+}
+.resources-btn{
+
+}
+
+.protocol-btn{
+
+}
+
