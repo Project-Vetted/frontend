@@ -47,10 +47,31 @@ a:hover{
 }
 
 .left-side{
-    background: linear-gradient(rgba(0,0,0,0), rgba (0,0,0,0.5)), url(../imgs/login_background.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('../imgs/login_background.png');
     background-size: cover;
 }
 
 .left-side .copy{
+    color: #fff;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+.left-side p{
+    font-weight: 400;
+}
+
+.right-side .copy{
+    color: black;
+    text-align: center;
+}
+
+.right-side .copy p{
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+
+.right-side form{
+    width: 328px;
 }
