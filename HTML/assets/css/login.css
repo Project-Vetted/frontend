@@ -46,10 +46,10 @@ a:hover{
     align-items: center;
 }
 
-.left-side{
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('../imgs/login_background.png');
-    background-size: cover;
-}
+/*.left-side{*/
+/*    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('https://www.pexels.com/photo/clouds-and-mountain-552789/');*/
+/*    background-size: cover;*/
+/*}*/
 
 .left-side .copy{
     color: #fff;
@@ -74,4 +74,31 @@ a:hover{
 
 .right-side form{
     width: 328px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #320259;
+    padding: 1em;
+    font-size: 0.875rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.input-container .password{
+    position: relative;
+}
+
+.input-container .password{
+    position: absolute;
+    top: 42px;
+    right: 16px;
 }
