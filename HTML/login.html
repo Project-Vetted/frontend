@@ -3,55 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Vetted - Login</title>
+<!--    Font awesome-->
+    <script src="https://kit.fontawesome.com/ca8971332a.js" crossorigin="anonymous"></script>
+<!--    Stylesheet-->
+    <link rel="stylesheet" href="assets/css/login.css">
+
 </head>
 <body>
-<div class="split-screen">
-    <div class="left-side">
-        <section class="copy">
-            <h1>Vetted Login</h1>
-            <p>Login to access your vetted dashboard</p>
-        </section>
-    </div>
-    <div class="right-side">
-        <form>
-<!--            <div class="input-container name">-->
-<!--                <label for="first-name">First Name</label>-->
-<!--                <input type="text" name="fname" id="first-name">-->
-<!--            </div>-->
-<!--            <div class="input-container name">-->
-<!--                <label for="last-name">Last Name</label>-->
-<!--                <input type="text" name="lname" id="last-name">-->
-<!--            </div>-->
-            <div class="input-container email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="input-container password">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <i class="far fa-eye-slash"></i>
-            </div>
-            <section class="copy">
-                <div class="container-login">
-                    <p>Don't remember your vetted login? <a href="#">
-                        <strong>Click here!</strong></a></p>
+<div class="container">
+    <div class="login-screen">
+        <div class="screen-content">
+            <form class="login">
+                <div class="login-field">
+                    <i class="login-icon fas fa-user"></i>
+                    <input type="text" class="login-input" placeholder="Enter your e-mail">
                 </div>
-            </section>
-            <section class="input-container cta">
-                <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    Sign up for our Vetted Newsletter.
-                </label>
-            </section>
-            <button class="signin-btn" type="submit">Sign In</button>
-            <section class="legal">
-                <p><span class="small">By continuing, you agree to accept our <br><a href="#">Privacy Policy</a> &amp; <a
-                    href="#">Terms of Service</a>.</span></p>
-            </section>
-        </form>
+                <div class="login-field">
+                    <i class="login-icon fas fa-lock"></i>
+                    <input type="password" class="login-input" placeholder="Enter password">
+                </div>
+                <br>
+                <button class="login-submit">
+                    <span class="button-text">Access Vetted    </span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                    <i class="button__icon fas fa-chevron-right"></i>
+
+                </button>
+            </form>
+        </div>
+        <div class="login-background">
+            <span class="screen-background-shapes background-shape4"></span>
+            <span class="screen-background-shapes background-shape3"></span>
+            <span class="screen-background-shapes background-shape2"></span>
+            <span class="screen-background-shapes background-shape1"></span>
+        </div>
     </div>
 </div>
-
 </body>
 </html>
