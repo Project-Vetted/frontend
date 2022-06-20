@@ -7,63 +7,36 @@
 </head>
 <body>
     <div class="container">
-        <form>
+        <form id="form1">
             <h3>Create Account</h3>
-            <input type="text" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Type your password again" required>
-
+            <input type="fname" placeholder="First Name">
+            <input type="lname" placeholder="Last Name">
+            <input type="DOB" placeholder="DOB (format YYYY-MM-DD)">
+            <input type="SSN" placeholder="SSN (format ###-##-####)">
+            <input type="text" placeholder="Email">
+            <input type="username" placeholder="Enter your desired username">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Type your password again">
+            <br>
+            <br>
             <div class="btn-box">
-                <button type="submit" class="submit btn-primary">Next>>></button>
-            </div>
-        </form>
-<!--Form page 2-->
-        <form>
-            <h3>Veteran Status Verification</h3>
-            <input type="fname" placeholder="First Name" required>
-            <input type="lname" placeholder="Last Name" required>
-            <input type="DOB" placeholder="DOB (format YYYY-MM-DD)" required>
-            <input type="SSN" placeholder="SSN (format ###-##-####)" required>
-
-            <div class="btn-box">
-                <button type="back" class="submit btn-primary"><<< Back</button>
-                <button type="submit" class="submit btn-primary">Next>>></button>
+                <button type="next1" id="next1" class="submit btn-primary">Next>>></button>
             </div>
         </form>
         <!--Form page 3-->
-        <form>
+        <form id="form2">
             <h3>Veteran Verification</h3>
             <span class="loader"></span>
 
             <div class="btn-box">
-                <button type="back" class="submit btn-primary"><<< Back</button>
-                <button type="cancel" class="submit btn-primary">Cancel</button>
-                <button type="submit" class="submit btn-primary">Next>>></button>
+                <button type="back1" id="back1" class="submit btn-primary"><<< Back</button>
+                <button type="next2" id="next2" class="submit btn-primary">Next>>></button>
             </div>
         </form>
         <!--Form page 4-->
-        <form>
-            <h3>Verification Status - Approved</h3>
-            <h1>You have been vetted and approved! Click next to continue to profile setup.</h1>
-            <div class="avatar-wrapper">
-                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
-                <div class="verified-avatar-icon">✓</div>
-            </div>
-            <div class="btn-box">
-                <button type="back" class="submit btn-primary"><<< Back</button>
-                <button type="submit" class="submit btn-primary">Next>>></button>
-            </div>
-        </form>
-        <form>
-            <h3>Create Profile</h3>
-            <input type="username" placeholder="Enter your desired username" required>
-            <input type="verifyuser" placeholder="Re-enter your username to confirm" required>
-            <div class="btn-box">
-                <button type="submit" class="submit btn-primary">Next>>></button>
-            </div>
-        </form>
-        <form>
-            <h3>Choose Your Community</h3>
+        <form id="form3">
+            <h3>Verification Status - Approved | Create Profile</h3>
+            <h1>You have been vetted and approved! Please select your desired communities.</h1>
             <div class="community-container">
                 <ul class="ks-cboxtags">
                     <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label for="checkboxOne">PTSD</label></li>
@@ -80,44 +53,59 @@
                     <li><input type="checkbox" id="checkboxTwelve" value="Clover"><label for="checkboxTwelve">Panic Disorder</label></li>
                 </ul>
             </div>
-
+            <h4>By click submit, you are agreeing to Vetted <a href="https://benice.com/">community guidelines.</a></h4>
             <div class="btn-box">
-                <button type="back" class="submit btn-primary"><<< Back</button>
-                <button type="submit" class="submit btn-primary">Next>>></button>
+                <button type="back2" id="back2" class="submit btn-primary"><<< Back</button>
+                <button type="submit" class="submit btn-primary">Submit>>></button>
             </div>
         </form>
-        <form>
-            <h3>Community Guidelines</h3>
-            <h1>Read the community guidelines below:</h1>
-            <h4>Welcome to the Vetted community! This is a safe space to discuss mental health.
 
-                We want everyone to be part of our community and have their voice heard.
-
-                We encourage your feedback and aim to respond to your comments as soon as possible. While we do moderate
-                this community, we welcome open discussion.
-
-                To help everyone enjoy our community, we ask that when you post, you keep in mind the following:
-
-                We don’t allow defamatory, indecent, offensive, profane, discriminatory, misleading, unlawful or threatening comments.
-                Personal attacks, name-calling, trolling and abuse will not be tolerated.
-                Spamming, posting promotional material or posting links to third party websites is not permitted.
-                We reserve the right to delete comments at our discretion and block any repeat offenders. We will remove content that is fraudulent, deceptive or misleading.
-                Coordinated group attacks will not be tolerated.
-                Respect that other people in the community have had different life experiences and may have a different perspective to yours. We welcome different viewpoints.
-                Our community is a public place. Don’t post personal information that you would not be comfortable sharing with a stranger. We recommend that you don’t post any information that may identify you or anyone else, such as your address, email address or phone number.
-                Employees participating in the discussion in our community are reminded of the staff social media guidelines.
-                If you have a question, please get in touch via our website at vetted.io.
-            </h4>
-            <div class="check">
-                <input id="check" type="checkbox">
-                <label for="check"></label>
-            </div>
-
-            <div class="btn-box">
-                <button type="back" class="submit btn-primary"><<< Back</button>
-                <button type="submit" class="submit btn-primary">Next>>></button>
-            </div>
-        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
     </div>
+
+    <!-- custom js file link  -->
+<!--<script src="./assets/js/registration.js"></script>-->
+<script>
+    let form1 = document.getElementById("form1");
+    let form2 = document.getElementById("form2");
+    let form3 = document.getElementById("form3");
+
+    let next1 = document.getElementById("next1");
+    let next2 = document.getElementById("next2");
+
+    let back1 = document.getElementById("back1");
+    let back2 = document.getElementById("back2");
+
+    let progress = document.getElementById("progress");
+
+    next1.onclick = function(){
+        form1.style.left = "-450px";
+        form2.style.left = "40px";
+        progress.style.width = "240px";
+    }
+
+    back1.onclick = function(){
+        form1.style.left = "40px";
+        form2.style.left = "450px";
+        progress.style.width = "120";
+    }
+
+    next2.onclick = function(){
+        form2.style.left = "-450px";
+        form3.style.left = "40px";
+        progress.style.width = "360px";
+    }
+
+    back2.onclick = function(){
+        form1.style.left = "40px";
+        form2.style.left = "450px";
+        progress.style.width = "240px";
+    }
+</script>
 </body>
 </html>
