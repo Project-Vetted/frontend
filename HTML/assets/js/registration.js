@@ -1,4 +1,3 @@
-
 // function nextForm() {
 //     $(document).on('click', '.next1', function (){
 //         form1.style.left = "-450px";
