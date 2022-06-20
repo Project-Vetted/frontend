@@ -72,11 +72,11 @@ form button{
 }
 
 #form2{
-    left: 450px;
+    display: none;
 }
 
 #form3 {
-    left: 450px;
+    display: none;
 }
 
 .step-row{
