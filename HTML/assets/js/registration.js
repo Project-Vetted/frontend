@@ -21,7 +21,7 @@ function RegisterView(){
                 <button type="button" id="next1" class="submit btn-primary">Next>>></button>
             </div>
         </form>
-        <!--Form page 3-->
+        <!--Form page 2-->
         <form id="form2">
             <span class="loader"></span>
             <h3>Veteran Status - You are approved!</h3>
@@ -39,7 +39,7 @@ function RegisterView(){
                 <button type="button" id="next2" class="submit btn-primary">Next>>></button>
             </div>
         </form>
-        <!--Form page 4-->
+        <!--Form page 3-->
         <form id="form3">
             <h3>Verification Status - Approved</h3>
             <h5>You have been vetted and approved! Please select your desired communities:</h5>
