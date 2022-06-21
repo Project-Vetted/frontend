@@ -211,7 +211,51 @@ i{
 
 
 /* Welcome message */
+.card{
+    background-color: var(--dark-color);
+    padding: 2.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(82, 63, 105, 0.05);
+}
 
+.title{
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--margin-small);
+}
+
+.independent-title{
+    font-size: var(--font-size-medium);
+    color: var(--light-color);
+    padding: 2.5rem 0 1.25rem;
+}
+
+.main-title{
+    font-size: var(--font-size-large);
+}
+
+.card-header{
+    padding-block: 1rem;
+    margin-bottom: var(--margin-medium);
+    border-bottom: 1px solid var(--border-bottom-color);
+}
+
+.card-header small{
+    font-size: 1.2rem;
+    color: #350259;
+}
+
+.card-header .title{
+    margin-bottom: 0;
+}
+
+.card-image{
+    padding: 2.5rem;
+}
+
+.card-description{
+    font-size: var(--font-size-small);
+    margin-bottom: var(--margin-small);
+}
 /* Management area */
 
 /* Footer */
