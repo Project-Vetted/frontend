@@ -45,20 +45,81 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px 0 12px 0;
 }
 
 form .user-details .input-box{
     width: calc(100% / 2 - 20px);
-    margin: 20px 0 12px 0;
+    margin-bottom: 15px;
 }
 
 .user-details .input-box input{
     height: 45px;
     width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 12px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
 
 .user-details .input-box details{
     font-weight: 500;
     margin-bottom: 5px;
     display: block;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #776BCC;
+
+}
+
+form .check-categories{
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+form .button{
+    height: 30px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 80%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: linear-gradient(135deg, #C7C5F4, #776BCC);
+    font-size:16px;
+    font-weight: 300;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+form . button input:hover{
+    background: linear-gradient(-135deg, #C7C5F4, #776BCC);
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    form .check-categories{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
 }
